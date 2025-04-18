@@ -1,0 +1,23 @@
+<section id="home">
+    <div class="shape"></div>
+
+    <div id="cta">
+        <h1 class="tittle">
+            ¿Qué comemos
+            <span> hoy </span>?
+        </h1>
+        <p class="description">
+            ¡Nosotros te ayudamos!
+        </p>
+        <div id="cta_btn">
+            <a [routerLink]="['/buscador']" class="btn_general">
+                Buscar
+            </a>
+        </div>
+    </div>
+
+    <div id="banner">
+        <!-- Imagen dinámica con cambio automático -->
+        <img [src]="imagenes[indiceActual]" alt="Plato de comida">
+    </div>
+</section>

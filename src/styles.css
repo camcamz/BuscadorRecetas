@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #CADBB7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#21561b 1.55px, transparent 1.55px), radial-gradient(#21561b 1.55px, #CADBB7 1.55px);
+    background-size: 62px 62px;
+    background-position: 0 0,31px 31px;
+}

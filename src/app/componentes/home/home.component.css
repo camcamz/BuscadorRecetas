@@ -1,0 +1,219 @@
+
+
+section {
+    padding: 5% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Contenedor principal */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#cta {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 3%;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+/* 🔹 Título */
+.tittle {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tittle span {
+    color: #93A267;
+}
+
+/* 🔹 Descripción */
+.description {
+    font-size: 2rem;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* 🔹 Botón de Acción */
+#cta_btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn_general {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: #46592B;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn_general:hover {
+    background: #93A267;
+    color: #46592B;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor de la imagen */
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    position: relative;
+}
+
+/* Imágenes dentro del banner */
+#banner img {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Forma decorativa */
+.shape {
+    background-color: #46592B;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50% 0 0 50%;
+}
+
+
+
+/* 📱 Responsivo */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;  /* Apilar los elementos de forma vertical */
+        align-items: center;  /* Centra el contenido */
+        justify-content: center;
+    }
+
+    #cta {
+        width: 90%;  /* Ocupará el 90% del ancho */
+        text-align: center;
+        backdrop-filter: none;  /* Elimina el filtro de desenfoque */
+        margin-bottom: 20px;  /* Separación con las imágenes */
+    }
+
+    .tittle {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .btn_general {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    #banner {
+        width: 90%;  /* El contenedor de las imágenes ocupará el 90% */
+        margin-top: 20px;  /* Separación de la sección anterior */
+        display: flex;
+        justify-content: center;
+    }
+
+    #banner img {
+        width: 100%;  /* Las imágenes ocupan el 100% del ancho */
+        max-width: 400px;  /* Limita el ancho máximo de la imagen */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 8% 5%; /* Aumentar padding para dar más aire */
+        flex-direction: column;
+    }
+
+    #home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cta {
+        width: 100%;
+        padding: 20px 15px;
+        margin-bottom: 25px;
+        gap: 20px;
+        backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.85); /* Más opaco para legibilidad */
+    }
+
+    .tittle {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .btn_general {
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+
+    #cta_btn {
+        flex-direction: column; /* Apila los botones verticalmente */
+        align-items: center;
+        gap: 12px;
+    }
+
+    #banner {
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    #banner img {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* Forma decorativa visible */
+    .shape {
+        display: block;
+        background-color: #46592B;
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        border-radius: 50% 0 0 50%;
+    }
+}
